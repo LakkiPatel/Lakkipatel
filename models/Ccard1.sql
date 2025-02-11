@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
- with cte as 
+ with ct as 
  (select 
  tranid,
  {{ convert_to_uppercase('Customername') }} AS Customername,
@@ -11,4 +11,4 @@
  {{ ref('Ccard')}}
  )
 
- select * from cte
+ select * from ct

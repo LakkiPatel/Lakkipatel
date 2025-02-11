@@ -2,7 +2,11 @@
 version: 2
 
 models:
+<<<<<<< HEAD
   - name: Ccard
+=======
+  - name: Tran1
+>>>>>>> 70ef7317bb968644cc27bb89377440c402c53504
     description: "A starter dbt model"
     columns:
       - name: Tranid
@@ -10,4 +14,7 @@ models:
         data_tests:
           - unique
           - not_null
+<<<<<<< HEAD
           
+=======
+>>>>>>> 70ef7317bb968644cc27bb89377440c402c53504
