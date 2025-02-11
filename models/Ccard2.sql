@@ -1,4 +1,5 @@
-{{ config(
+
+{ config(
     materialized='incremental'
 ) }}
 
