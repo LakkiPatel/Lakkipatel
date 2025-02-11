@@ -6,7 +6,7 @@
     enabled = true
 )}}
 
-with Tran as (
+with Trans as (
     select
     tranid,
     Customername,
@@ -26,7 +26,7 @@ Customer as (
         From {{ref('Customer_view') }}
 ),
 final as (
-    select * from Tran t join Customer c on (t.Customername=c.name)  
+    select * from Trans t join Customer c on (t.Customername=c.name)  
 {% if is_incremental() %}
 {% do log("lakki", info=True) %}
     WHERE 
