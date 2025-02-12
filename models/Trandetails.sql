@@ -12,7 +12,7 @@ with Tran as (
     Customername,
     Accountnumber,
     Posttime,
-    trantype,
+    trantype
     from 
     {{ ref('Ccard2') }}
 ),
